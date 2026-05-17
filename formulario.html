@@ -6,7 +6,7 @@
   <meta name="copyright" content="Neury Hernández">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Inscripción</title>
-  <link rel="stylesheet" href="formulario.css">
+  <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
   <div class="container">
@@ -17,23 +17,23 @@
       <h6>Si no eres mayor de 10 años, no puedes inscribirte.</h6>
     </header>
 
-    <!-- Formulario principal -->
+   
     <form action="gracias.html" method="post">
-      <!-- Nombre -->
+   
       <label for="nombre">Nombre completo: *</label>
       <input type="text" id="nombre" name="nombre" required>
       <label for="edad">Edad: *</label>
       <input type="number" id="edad" name="edad" min="10" max="30" required>
 
-      <!-- Correo -->
+   
       <label for="email">Correo electrónico: *</label>
       <input type="email" id="email" name="email" required>
 
-      <!-- Teléfono -->
+   
       <label for="telefono">Teléfono: *</label>
       <input type="tel" id="telefono" name="telefono" required >
 
-      <!-- Selección de actividad -->
+
       <label for="actividad">Actividad: *</label>
       <select id="actividad" name="actividad" required>
         <option value="">Seleccione una actividad</option>
@@ -47,11 +47,12 @@
         <option value="ciberseguridad">Curso de Ciberseguridad</option>
         <option value="basquetball">Practica de Basquetball</option>
       </select>
-      <!-- Comentarios -->
+     
+
       <label for="comentarios">Comentarios adicionales:</label>
       <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
-      <!-- Botón de envío -->
+    
       <button type="submit">Enviar inscripción</button>
     </form>
 
