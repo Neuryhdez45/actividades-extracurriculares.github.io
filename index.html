@@ -1,111 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Configuración básica -->
   <meta charset="UTF-8">
-  <meta name="author" content="Neury Salomón">
-  <meta name="copyright" content="Neury Hernández">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Social Extracurricular</title>
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <div class="container">
- 
-  <header>
-    <h1>Bienvenido a la Red Social de Actividades</h1>
-    <marquee>¡Participa y comparte tus talentos!</marquee>
-    <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="activities.html">Actividades</a> |
-      <a href="about.html">Sobre Nosotros</a> |
-      <a href="contact.html">Contacto</a> |
-      <a href="quiz.html">Cuestionario</a>
-    </nav>
-  </header>
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <h1>Bienvenido a la Red Social de Actividades</h1>
+      <marquee>¡Descubre, participa y comparte tus talentos!</marquee>
+      <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="activities.html">Actividades</a> |
+        <a href="about.html">Sobre Nosotros</a> |
+        <a href="contact.html">Contacto</a> |
+        <a href="quiz.html">Cuestionario</a>
+      </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida">
+      <h2>¿Qué es esta red social?</h2>
+      <p>
+        Esta plataforma fue creada para que los estudiantes puedan compartir sus experiencias en actividades extracurriculares,
+        como deportes, música, arte, tecnología y más.
+      </p>
+      <ul>
+        <li>Comparte tus logros</li>
+        <li>Descubre nuevas actividades</li>
+        <li>Conecta con otros estudiantes</li>
+      </ul>
+    </section>
+
+    <!-- Sección multimedia -->
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+      <div class="media-grid">
+        <audio controls>
+          <source src="audio/presentacion.mp3" type="audio/mpeg">
+        </audio>
+        <video controls width="400">
+          <source src="video/demo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- Sección de tabla -->
+    <section id="tabla">
+      <h2>Calendario de Actividades</h2>
+      <table>
+        <tr>
+          <th>Actividad</th>
+          <th>Fecha</th>
+          <th>Lugar</th>
+        </tr>
+        <tr>
+          <td>Torneo de Fútbol</td>
+          <td>20 de Mayo</td>
+          <td>Cancha Principal</td>
+        </tr>
+        <tr>
+          <td>Concurso de Arte</td>
+          <td>25 de Mayo</td>
+          <td>Aula de Arte</td>
+        </tr>
+        <tr>
+          <td>Hackathon</td>
+          <td>30 de Mayo</td>
+          <td>Laboratorio de Informática</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios">
+      <h2>Testimonios de Estudiantes</h2>
+      <blockquote>
+        "Gracias a esta red social descubrí el club de robótica y ahora participo en competencias internacionales."
+      </blockquote>
+      <blockquote>
+        "Me encanta poder compartir mis dibujos y recibir retroalimentación de otros compañeros."
+      </blockquote>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section id="galeria">
+  <h2>Galería de Actividades</h2>
+  <div class="gallery">
+    <img src="img/futbol.jpg" alt="Torneo de fútbol">
+    <img src="img/arte.jpg" alt="Concurso de arte"> <br>
+    <img src="img/hackathon.jpg" alt="Hackathon">
+    <img src="img/musica.jpg" alt="Festival de música">
+    <img src="img/teatro.jpg" alt="Obra de teatro">
+  </div>
+</section>
 
 
-  <section id="bienvenida">
-    <h2>¿Qué es esta red social?</h2>
-    <p>
-      Esta plataforma fue creada para que los estudiantes puedan compartir sus experiencias en actividades extracurriculares,
-      como deportes, música, arte, tecnología y más. Aquí podrás encontrar compañeros con intereses similares y participar en eventos,
-      Incluso puedes conocer mas personas competitivas para fortalecer tus habilidades y ser mejor que antes.
-    </p>
-    <ul>
-      <li>Comparte tus logros</li>
-      <li>Descubre nuevas actividades</li>
-      <li>Conecta con otros estudiantes</li>
-    </ul>
-  </section>
+    <!-- Preguntas frecuentes -->
+    <section id="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>¿Cómo me inscribo en una actividad?</summary>
+        <p>Solo debes dar clic en el botón "Inscribirse" y llenar el formulario.</p>
+      </details>
+      <details>
+        <summary>¿Puedo subir mis propios videos?</summary>
+        <p>Sí, cada usuario puede compartir contenido multimedia en su perfil.</p>
+      </details>
+      <details>
+        <summary>¿Cómo contacto a otros estudiantes?</summary>
+        <p>Puedes unirte a los grupos de interés.</p>
+      </details>
+    </section>
+
+    <!-- Sección de botones -->
+    <section id="botones">
+      <h2>Participa</h2>
+      <button id="btnInscribirse">Inscribirse</button>
+      <button id="btnVerMas">Ver más actividades</button>
+    </section>
+    <script src="https://utteranc.es/client.js"
+        repo="Neuryhdez45/actividades-extracurriculares.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 
-  <section id="multimedia">
-    <h2>Multimedia</h2>
-    <p>Escucha nuestra presentación y mira el video introductorio:</p>
-    <audio controls>
-      <source src="audio/presentacion.mp3" type="audio/mpeg">
-    </audio>
-    <video controls width="400">
-      <source src="video/demo.mp4" type="video/mp4">
-    </video>
-  </section>
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
+    </footer>
+  </div>
 
-  <section id="tabla">
-    <h2>Calendario de Actividades</h2>
-    <table border="1">
-      <tr>
-        <th>Actividad</th>
-        <th>Fecha</th>
-        <th>Lugar</th>
-      </tr>
-      <tr>
-        <td>Torneo de Fútbol</td>
-        <td>20 de Mayo</td>
-        <td>Cancha Principal</td>
-      </tr>
-      <tr>
-        <td>Concierto de Música</td>
-        <td>22 de Mayo</td>
-        <td>Auditorio</td>
-      </tr>
-      <tr>
-        <td>Practica de Basquetball</td>
-        <td>23 de Mayo</td>
-        <td>Cancha de Basquetball</td>
-      </tr>
-      <tr>
-        <td>Competencia de Programación</td>
-        <td>24 de Mayo</td>
-        <td>Laboratorio de Informática</td>
-      </tr>
-      <tr>
-        <td>Concurso de Arte</td>
-        <td>25 de Mayo</td>
-        <td>Aula de Arte</td>
-      </tr>
-      <tr>
-        <td>Hackathon</td>
-        <td>30 de Mayo</td>
-        <td>Laboratorio de Informática</td>
-      </tr>
-    </table>
-  </section>
-
-
-  <section id="botones">
-    <h2>Participa</h2>
-    <button id="btnInscribirse">Inscribirse</button>
-    <button id="btnVerMas">Ver más actividades</button>
-  </section>
-
- 
-  <footer>
-    <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
-  </footer>
-
-</div>
+  <!-- Script -->
   <script src="index.js"></script>
 </body>
 </html>

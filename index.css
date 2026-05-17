@@ -67,6 +67,31 @@ td {
   text-align: center;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* permite que las imágenes bajen a otra fila */
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  flex: 1 1 calc(50% - 20px); /* cada imagen ocupa 50% del ancho menos el gap */
+  max-width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 5px solid #fff;
+}
+
+.gallery img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  border-color: #0066cc;
+}
+
+
 /* Botones */
 button {
   background: #0066cc;
@@ -114,6 +139,7 @@ h1 {
   margin-bottom: 10px;
 }
 h2 {
+  text-align: center;
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #0066cc;
@@ -133,5 +159,5 @@ button {
 }
 button:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #004080, #00264d);
+  background: linear-gradient(90deg, #3c5672, #073768);
 }
