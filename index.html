@@ -10,20 +10,20 @@
 </head>
 <body>
   <div class="container">
-    <!-- Encabezado -->
+   
     <header>
       <h1>Bienvenido a la Red Social de Actividades</h1>
       <marquee>¡Descubre, participa y comparte tus talentos!</marquee>
       <nav>
         <a href="index.html">Inicio</a> |
-        <a href="activities.html">Actividades</a> |
-        <a href="about.html">Sobre Nosotros</a> |
+        <a href="#tabla">Actividades</a> |
+        <a href="#footer-info">Sobre Nosotros</a> |
         <a href="contact.html">Contacto</a> |
         <a href="quiz.html">Cuestionario</a>
       </nav>
     </header>
 
-    <!-- Sección de bienvenida -->
+    
     <section id="bienvenida">
       <h2>¿Qué es esta red social?</h2>
       <p>
@@ -37,7 +37,7 @@
       </ul>
     </section>
 
-    <!-- Sección multimedia -->
+    
     <section id="multimedia">
       <h2>Multimedia</h2>
       <div class="media-grid">
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <!-- Sección de tabla -->
+   
     <section id="tabla">
       <h2>Calendario de Actividades</h2>
       <table>
@@ -65,19 +65,38 @@
           <td>Cancha Principal</td>
         </tr>
         <tr>
+            <td>Basquetball</td>
+            <td>22 de Mayo</td>
+            <td>Cancha de Basquetball</td>
+
+        </tr>
+        <tr>
+            <td>Taekwondo</td>
+            <td>24 de Julio</td>
+            <td>Sala de Entrenamiento</td>
+
+        </tr>
+           <tr>
+            <td>Curso de Ciberseguridad</td>
+            <td>28 de Abril</td>
+            <td>Auditorio Principal</td>
+
+        </tr>
+        <tr>
+            <td>Torneo de Ajedrez</td>
+            <td>15 de Mayo</td>
+            <td>Mesas de Cantares</td>
+        </tr>
+        <tr>
           <td>Concurso de Arte</td>
           <td>25 de Mayo</td>
           <td>Aula de Arte</td>
         </tr>
-        <tr>
-          <td>Hackathon</td>
-          <td>30 de Mayo</td>
-          <td>Laboratorio de Informática</td>
-        </tr>
+       
       </table>
     </section>
 
-    <!-- Sección de testimonios -->
+  
     <section id="testimonios">
       <h2>Testimonios de Estudiantes</h2>
       <blockquote>
@@ -88,20 +107,24 @@
       </blockquote>
     </section>
 
-    <!-- Galería de imágenes -->
+   
     <section id="galeria">
   <h2>Galería de Actividades</h2>
   <div class="gallery">
     <img src="img/futbol.jpg" alt="Torneo de fútbol">
-    <img src="img/arte.jpg" alt="Concurso de arte"> <br>
-    <img src="img/hackathon.jpg" alt="Hackathon">
-    <img src="img/musica.jpg" alt="Festival de música">
+    <img src="img/arte.jpg" alt="Concurso de arte"> 
+    <img src="img/ajedrez.png" alt="Torneo de ajedrez">
+    <img src="img/taekwondo.jpg" alt="Competencia de taekwondo">
+    <img src="img/ciberseguridad.jpg" alt="Curso de ciberseguridad">
+    <img src="img/basquetball.jpg" alt="Torneo de basquetball">
+  
+    <img src="img/festival.jpg" alt="Festival de música">
     <img src="img/teatro.jpg" alt="Obra de teatro">
   </div>
 </section>
 
 
-    <!-- Preguntas frecuentes -->
+  
     <section id="faq">
       <h2>Preguntas Frecuentes</h2>
       <details>
@@ -118,28 +141,41 @@
       </details>
     </section>
 
-    <!-- Sección de botones -->
+  
     <section id="botones">
       <h2>Participa</h2>
       <button id="btnInscribirse">Inscribirse</button>
       <button id="btnVerMas">Ver más actividades</button>
     </section>
-    <script src="https://utteranc.es/client.js"
+   
+
+
+  </div>
+
+   <footer>
+  <div class="footer-info" id="footer-info">
+    <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
+    <p><strong>Contacto:</strong></p>
+    <ul>
+      <li>Email: neurysalomonhdez@gmail.com</li>
+      <li>Teléfono: +1 (829) 779-1634</li>
+      <li>Dirección: Santo Domingo, República Dominicana</li>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71175.22036277277!2d-69.84022908594423!3d18.510798863886674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf86f1f07bf257%3A0x79a94f00155fb584!2sSanto%20Domingo%20Este!5e1!3m2!1ses!2sdo!4v1778986762547!5m2!1ses!2sdo" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </ul>
+    <p>Síguenos en:
+      <a href="https://facebook.com/creativaweb" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/creativaweb" target="_blank">Instagram</a> |
+      <a href="https://github.com/Salomon/mi-pagina-web" target="_blank">GitHub</a>
+    </p>
+  </div>
+</footer>
+ <script src="https://utteranc.es/client.js"
         repo="Neuryhdez45/actividades-extracurriculares.github.io"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
-
-
-    <!-- Pie de página -->
-    <footer>
-      <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
-    </footer>
-  </div>
-
-  <!-- Script -->
   <script src="index.js"></script>
 </body>
 </html>
