@@ -97,20 +97,7 @@ td {
 }
 
 
-/* Botones */
-button {
-  background: #0066cc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-button:hover {
-  background: #004080;
-}
 
 /* Pie de página */
 footer {
@@ -158,9 +145,13 @@ button {
   border: none;
   padding: 12px 24px;
   margin: 5px;
+  margin-left: 730px;
   border-radius: 25px;
   cursor: pointer;
   transition: transform 0.2s ease;
+}
+#btnVerMas {
+  margin-left: 700px;
 }
 button:hover {
   transform: scale(1.05);
