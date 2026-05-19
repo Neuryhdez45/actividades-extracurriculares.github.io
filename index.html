@@ -1,182 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Configuración básica -->
   <meta charset="UTF-8">
+  <meta name="author" content="Axel Peréz">
+  <meta name="copyright" content="Axel P.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Red Social Extracurricular</title>
+  <title>Red Social Extracurricular - Actividades para Estudiantes</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
   <div class="container">
-   
-    <header>
-      <h1>Bienvenido a la Red Social de Actividades</h1>
-      <marquee>¡Descubre, participa y comparte tus talentos!</marquee>
-      <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="#tabla">Actividades</a> |
-        <a href="#footer-info">Sobre Nosotros</a> |
-        <a href="#footer-info">Contacto</a> |
-        <a href="login.html">Iniciar Sesión</a> |
-        <a href="registro.html">Registrarse</a>
+    <header class="header">
+      <div class="header-content">
+        <h1>🎯 Red Social de Actividades</h1>
+       <marquee>Descubre, participa y comparte tus talentos</marquee>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="#actividades" class="nav-link">Actividades</a>
+        <a href="#testimonios" class="nav-link">Comunidad</a>
+        <a href="login.html" class="nav-link">Iniciar Sesión</a>
+        <a href="registro.html" class="nav-link btn-registro">Registrarse</a>
       </nav>
     </header>
 
     
-    <section id="bienvenida">
-      <h2>¿Qué es esta red social?</h2>
-      <p>
-        Esta plataforma fue creada para que los estudiantes puedan compartir sus experiencias en actividades extracurriculares,
-        como deportes, música, arte, tecnología y más.
-      </p>
-      <ul>
-        <li>Comparte tus logros</li>
-        <li>Descubre nuevas actividades</li>
-        <li>Conecta con otros estudiantes</li>
-      </ul>
-    </section>
-
-    
-    <section id="multimedia">
-      <h2>Multimedia</h2>
-      <div class="media-grid">
-        <audio controls>
-          <source src="audio/presentacion.mp3" type="audio/mpeg">
-        </audio>
-        <video controls width="400">
-          <source src="video/demo.mp4" type="video/mp4">
-        </video>
+    <section id="bienvenida" class="welcome-section">
+      <h2>Bienvenido a El espacio de actividades</h2>
+      <p>Conecta con otros estudiantes, o usuarios y Descubre nuevas actividades y comparte tus logros.</p>
+      <div class="benefits">
+        <div class="benefit-card">
+          <span class="icon">🏆</span>
+          <h3>Comparte logros</h3>
+          <p>Muestra tus éxitos a la comunidad.</p>
+          <div class="badge">¡Comparte tu éxito!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">🔍</span>
+          <h3>Descubre actividades</h3>
+          <p>Encuentra nuevas pasiones.</p>
+          <div class="badge">¡Desarrolla!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">📚</span>
+          <h3>Aprende</h3>
+          <p>Accede a recursos y consejos.</p>
+          <div class="badge">¡Empieza a aprender!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">🎉</span>
+          <h3>Encuentrate</h3>
+          <p>Descubre en qué eres mejor.</p>
+          <div class="badge">¡Únete a la diversión!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">💡</span>
+          <h3>Inspírate</h3>
+          <p>Mejora tu potencial.</p>
+        <div class="badge">¡Explora ahora!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">🤝</span>
+          <h3>Colabora</h3>
+          <p>Trabaja en equipo.</p>
+          <div class="badge">¡Únete a proyectos!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">🌟</span>
+          <h3>Destaca</h3>
+          <p>Create y Desarrolla.</p>
+          <div class="badge">¡Demuestra tu potencial!</div>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">👥</span>
+          <h3>Conecta</h3>
+          <p>Crea amistades verdaderas.</p>
+          <div class="badge">¡Únete ahora!</div>
+        </div>
       </div>
     </section>
 
-   
-    <section id="tabla">
+    <section id="actividades" class="activities-section">
       <h2>Calendario de Actividades</h2>
-      <table>
-        <tr>
-          <th>Actividad</th>
-          <th>Fecha</th>
-          <th>Lugar</th>
-        </tr>
-        <tr>
-          <td>Torneo de Fútbol</td>
-          <td>20 de Mayo</td>
-          <td>Cancha Principal</td>
-        </tr>
-        <tr>
-            <td>Basquetball</td>
-            <td>22 de Mayo</td>
-            <td>Cancha de Basquetball</td>
-
-        </tr>
-        <tr>
-            <td>Taekwondo</td>
-            <td>24 de Julio</td>
-            <td>Sala de Entrenamiento</td>
-
-        </tr>
-           <tr>
-            <td>Curso de Ciberseguridad</td>
-            <td>28 de Abril</td>
-            <td>Auditorio Principal</td>
-
-        </tr>
-        <tr>
-            <td>Torneo de Ajedrez</td>
-            <td>15 de Mayo</td>
-            <td>Mesas de Cantares</td>
-        </tr>
-        <tr>
-          <td>Concurso de Arte</td>
-          <td>25 de Mayo</td>
-          <td>Aula de Arte</td>
-        </tr>
-       
-      </table>
+      <div class="table-responsive">
+        <table class="activities-table">
+          <thead>
+            <tr>
+              <th>Actividad</th>
+              <th>Fecha</th>
+              <th>Lugar</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🏀 Torneo de Baloncesto</td>
+              <td>20 de Mayo</td>
+              <td>Cancha Principal</td>
+              <td><span class="badge completed">Acabado</span></td>
+            </tr>
+            <tr>
+              <td>⚽ Torneo de Fútbol</td>
+              <td>5 de Junio</td>
+              <td>Campo de Deportes</td>
+              <td><span class="badge active">Próximo</span></td>
+            </tr>
+            <tr>
+              <td>🎨 Concurso de Arte</td>
+              <td>28 de Septiembre</td>
+              <td>Aula de Arte</td>
+              <td><span class="badge completed">Acabado</span></td>
+            </tr>
+            <tr>
+              <td>🥋 Competencia Taekwondo</td>
+              <td>24 de Julio</td>
+              <td>Sala de Entrenamiento</td>
+              <td><span class="badge">Próximamente</span></td>
+            </tr>
+            <tr>
+              <td>♟️ Torneo de Ajedrez</td>
+              <td>1 de Junio</td>
+              <td>Sala de Estrategia</td>
+              <td><span class="badge completed">Acabado</span></td>
+            </tr>
+            <tr>
+              <td>💻 Curso de Ciberseguridad</td>
+              <td>2 de Junio</td>
+              <td>Auditorio Principal</td>
+              <td><span class="badge completed">En curso</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-  
-    <section id="testimonios">
-      <h2>Testimonios de Estudiantes</h2>
-      <blockquote>
-        "Gracias a esta red social descubrí el club de robótica y ahora participo en competencias internacionales."
-      </blockquote>
-      <blockquote>
-        "Me encanta poder compartir mis dibujos y recibir retroalimentación de otros compañeros."
-      </blockquote>
+    
+    <section id="galeria" class="gallery-section">
+      <h2>Momentos Destacados</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="img/futbol.jpg" alt="Torneo de fútbol">
+          <h3>Fútbol</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="img/arte.jpg" alt="Concurso de arte">
+          <h3>Arte</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="img/ajedrez.png" alt="Torneo de ajedrez">
+          <h3>Ajedrez</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="img/taekwondo.jpg" alt="Taekwondo">
+          <h3>Taekwondo</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="img/ciberseguridad.jpg" alt="Ciberseguridad">
+          <h3>Tecnología</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="img/basquetball.jpg" alt="Baloncesto">
+          <h3>Baloncesto</h3>
+        </div>
+      </div>
     </section>
 
-   
-    <section id="galeria">
-  <h2>Galería de Actividades</h2>
-  <div class="gallery">
-    <img src="img/futbol.jpg" alt="Torneo de fútbol">
-    <img src="img/arte.jpg" alt="Concurso de arte"> 
-    <img src="img/ajedrez.png" alt="Torneo de ajedrez">
-    <img src="img/taekwondo.jpg" alt="Competencia de taekwondo">
-    <img src="img/ciberseguridad.jpg" alt="Curso de ciberseguridad">
-    <img src="img/basquetball.jpg" alt="Torneo de basquetball">
-  
-    <img src="img/festival.jpg" alt="Festival de música">
-    <img src="img/teatro.jpg" alt="Obra de teatro">
-  </div>
-</section>
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="testimonials-section">
+      <h2>Lo que dicen nuestros estudiantes</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Esta plataforma me permitió descubrir la robótica y ahora participo en competencias internacionales."</p>
+          <strong>- Juan Pérez</strong>
+          <span class="role">Club de Robótica</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Me encanta compartir mis dibujos y recibir comentarios constructivos de otros compañeros."</p>
+          <strong>- María García</strong>
+          <span class="role">Concurso de Arte</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Gracias a esta red conocí gente con mis mismos intereses. Hemos formado un grupo muy unido."</p>
+          <strong>- Carlos López</strong>
+          <span class="role">Festival de Música</span>
+        </div>
+      </div>
+    </section>
 
-
-  
-    <section id="faq">
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="faq" class="faq-section">
       <h2>Preguntas Frecuentes</h2>
-      <details>
-        <summary>¿Cómo me inscribo en una actividad?</summary>
-        <p>Solo debes dar clic en el botón "Inscribirse" y llenar el formulario.</p>
-      </details>
-      <details>
-        <summary>¿Puedo subir mis propios videos?</summary>
-        <p>Sí, cada usuario puede compartir contenido multimedia en su perfil.</p>
-      </details>
-      <details>
-        <summary>¿Cómo contacto a otros estudiantes?</summary>
-        <p>Puedes unirte a los grupos de interés.</p>
-      </details>
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>¿Cómo me inscribo en una actividad?</summary>
+          <p>Solo debes dar clic en el botón "Inscribirse", rellenar el formulario con tus datos y seleccionar la actividad que deseas. ¡Así de fácil!</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Hay costo para participar?</summary>
+          <p>No, todas las actividades son completamente gratuitas para estudiantes. Solo necesitas registrarte en la plataforma.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo participar en múltiples actividades?</summary>
+          <p>¡Claro! Puedes inscribirte en todas las actividades que desees según tu disponibilidad de tiempo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo contacto a otros estudiantes?</summary>
+          <p>Puedes unirte a los grupos de interés en tu perfil y conectar con otros participantes de la comunidad.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Necesito experiencia previa?</summary>
+          <p>No necesitas experiencia. Hay actividades para todos los niveles, desde principiantes hasta avanzados.</p>
+        </details>
+      </div>
     </section>
 
-  
-    <section id="botones">
-      <h2>Participa</h2>
-      <button id="btnInscribirse">Inscribirse</button> <br>
-      <button id="btnVerMas">Ver más actividades</button>
+    <!-- LLAMADA A ACCIÓN -->
+    <section class="cta-section">
+      <h2>¿Listo para comenzar?</h2>
+      <p>Únete a nuestra comunidad y descubre todo lo que puedes lograr</p>
+      <div class="cta-buttons">
+        <button class="btn-primary" id="btnInscribirse">Inscribirse en una Actividad</button>
+        <button class="btn-secondary" id="btnVerMas">Ver Todas las Actividades</button>
+      </div>
     </section>
-   
-
-
   </div>
-<script src="https://utteranc.es/client.js"
-        repo="Neuryhdez45/actividades-extracurriculares.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-   <footer>
-  <div class="footer-info" id="footer-info">
-    <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
-    <p><strong>Contacto:</strong></p>
-    <ul>
-      <li>Email: neurysalomonhdez@gmail.com</li>
-      <li>Teléfono: +1 (829) 779-1634</li>
-      <li>Dirección: Santo Domingo, República Dominicana</li>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71175.22036277277!2d-69.84022908594423!3d18.510798863886674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf86f1f07bf257%3A0x79a94f00155fb584!2sSanto%20Domingo%20Este!5e1!3m2!1ses!2sdo!4v1778986762547!5m2!1ses!2sdo" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </ul>
-    <p>Síguenos en:
-      <a href="https://facebook.com/creativaweb" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/vortexclub_2/" target="_blank">Instagram</a> |
-      <a href="https://github.com/Salomon/mi-pagina-web" target="_blank">GitHub</a>
-    </p>
-  </div>
-</footer>
- 
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Esta Red Social creada por la empresa CreativaWeb, esta diseñada para insentivar a los jovenes para desarrollar habilidades deportivas, Disciplina y el Trabajo en Equipo.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <ul>
+          <li>📧 Email: neurysalomonhdez@gmail.com</li>
+          <li>📱 Teléfono: +1 (829) 779-1634</li>
+          <li>📍 Santo Domingo, República Dominicana</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CreativaWeb Studio - Proyecto académico</p>
+    </div>
+  </footer>
+
   <script src="js/index.js"></script>
 </body>
 </html>
