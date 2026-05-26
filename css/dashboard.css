@@ -285,10 +285,6 @@ body {
   transition: var(--transition);
 }
 
-.notificacion.unread {
-  background: #e3f2fd;
-  border-left: 4px solid var(--primary);
-}
 
 .notif-icon {
   font-size: 1.3rem;
