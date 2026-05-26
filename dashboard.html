@@ -108,18 +108,25 @@
       <div class="eventos-proximos">
         <h4>📅 Próximos Eventos</h4>
         <div class="evento-item">
-          <div class="evento-date">20 Mayo</div>
-          <div class="evento-info">
-            <p>Torneo de Baloncesto</p>
-            <small>Cancha Principal</small>
-          </div>
-        </div>
-        <div class="evento-item">
-          <div class="evento-date">25 Mayo</div>
+          <div class="evento-date">5 Junio</div>
           <div class="evento-info">
             <p>Torneo de Fútbol</p>
             <small>Campo de Deportes</small>
           </div>
+           <div class="evento-item">
+          <div class="evento-date">24 Julio</div>
+          <div class="evento-info">
+            <p>Competencia de Taekwondo</p>
+            <small>Sala de Entrenamiento</small>
+          </div>
+        </div>
+        <div class="evento-item">
+          <div class="evento-date">28 Septiembre</div>
+          <div class="evento-info">
+            <p>Torneo de Fútbol</p>
+            <small>Campo de Deportes</small>
+          </div>
+          
         </div>
       </div>
     </aside>
@@ -135,17 +142,7 @@
         document.getElementById("usuarioNombre").textContent = `¡Bienvenido, ${usuario}!`;
       }
 
-      // Botón de publicar
-      document.getElementById("btnPublicar").addEventListener("click", () => {
-        const texto = document.getElementById("textoPublicacion").value;
-        if (texto.trim()) {
-          alert("✅ Publicación enviada: " + texto);
-          document.getElementById("textoPublicacion").value = "";
-          // Aquí iría el código para agregar a la BD
-        } else {
-          alert("⚠️ Por favor escribe algo");
-        }
-      });
+      
 
       // Botón cerrar sesión
       document.getElementById("btnCerrar").addEventListener("click", () => {
