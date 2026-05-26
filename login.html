@@ -325,7 +325,7 @@
 
       const usuarioIngresado = document.getElementById("usuario").value.trim();
       const passwordIngresado = document.getElementById("password").value;
-      const recuerdame = document.getElementById("recuerdame").checked;
+
 
       const usuarioGuardado = localStorage.getItem("usuario");
       const passwordGuardado = localStorage.getItem("password");
@@ -344,18 +344,12 @@
         mensajeDiv.textContent = "✅ ¡Inicio de sesión exitoso! Redirigiendo...";
         mensajeDiv.className = "success";
         
-        // Guardar preferencia de "recuérdame"
-        if (recuerdame) {
-          localStorage.setItem("recuerdame", "true");
-          localStorage.setItem("usuarioGuardado", usuarioIngresado);
-        }
-
-        // Redirigir después de 1.5 segundos
+     
         setTimeout(() => {
           window.location.href = "dashboard.html";
         }, 1500);
       } else {
-        // Error de credenciales
+        
         mensajeDiv.textContent = "❌ Usuario o contraseña incorrectos";
         mensajeDiv.className = "error";
         
@@ -367,14 +361,10 @@
 
     // Cargar usuario guardado si existe
     window.addEventListener("DOMContentLoaded", () => {
-      const recuerdame = localStorage.getItem("recuerdame");
+    
       const usuarioGuardado = localStorage.getItem("usuarioGuardado");
       
-      if (recuerdame === "true" && usuarioGuardado) {
-        document.getElementById("usuario").value = usuarioGuardado;
-        document.getElementById("recuerdame").checked = true;
-        document.getElementById("password").focus();
-      }
+    
     });
   </script>
 </body>
