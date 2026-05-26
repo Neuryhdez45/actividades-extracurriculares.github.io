@@ -7,145 +7,188 @@
   <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-  <div class="dashboard-container">
-    
-    <aside class="sidebar">
-      <div class="sidebar-header">
+  <div class="contenedor">
+    <aside class="barra-lateral">
+      <div class="encabezado-barra">
         <h2>🎯 Menú</h2>
-        <button class="logout-btn" id="btnCerrar">Cerrar Sesión</button>
+        <button class="boton-cerrar">Cerrar Sesión</button>
       </div>
-      <nav class="sidebar-nav">
-        <a href="#inicio" class="nav-item active">
-          <span class="icon">🏠</span> Inicio
-        </a>
-        <a href="formulario.html" class="nav-item">
-          <span class="icon">📝</span> Inscribirse
-        </a>
-       
-        </a>
+      <nav class="navegacion">
+        <a href="#" class="enlace activo">🏠 Inicio</a>
+        <a href="formulario.html" class="enlace">📝 Inscribirse</a>
       </nav>
     </aside>
 
-    
-    <main class="main-content">
-      
-      <section class="perfil-section" id="perfil">
-        <div class="perfil-header">
-          
-           
-          <div class="perfil-info">
-            <h2 id="usuarioNombre">Bienvenido</h2>
-            <p class="perfil-bio">Estudiante apasionado por la tecnología y las actividades extracurriculares.</p>
-            <div class="perfil-stats">
-              <div class="stat">
-                <span class="stat-number" id="inscripciones">0</span>
-                <span class="stat-label">Inscripciones</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number" id="publicaciones">0</span>
-                <span class="stat-label">Publicaciones</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number" id="amigos">0</span>
-                <span class="stat-label">Amigos</span>
-              </div>
+    <main class="contenido-principal">
+      <section class="perfil">
+        <div class="info-perfil">
+          <h2 id="nombreUsuario">Bienvenido</h2>
+          <p>Estudiante apasionado por la tecnología y las actividades extracurriculares.</p>
+          <div class="estadisticas">
+            <div class="estadistica">
+              <span class="numero">0</span>
+              <span class="etiqueta">Inscripciones</span>
+            </div>
+            <div class="estadistica">
+              <span class="numero">0</span>
+              <span class="etiqueta">Publicaciones</span>
+            </div>
+            <div class="estadistica">
+              <span class="numero">0</span>
+              <span class="etiqueta">Amigos</span>
             </div>
           </div>
         </div>
- 
+      </section>
 
-       
       <section class="noticias">
-        <h3>📰 Noticias de Deportes</h3>
-        <div class="feed" id="feed">
-          <div class="post">
-            <div class="post-header">
-              
-              <div class="post-meta">
-                <h4>NBA Lives</h4>
-                <p class="post-time">Hace 2 horas</p>
+        <h3>🏀 Calendario NBA</h3>
+        <div class="calendario">
+          <div class="partido">
+            <div class="fecha">HOY</div>
+            <div class="equipos">
+              <div class="equipo">
+                <span class="logo">🏀</span>
+                <span class="nombre">Lakers</span>
+                <span class="puntos">105</span>
+              </div>
+              <div class="vs">vs</div>
+              <div class="equipo">
+                <span class="puntos">102</span>
+                <span class="nombre">Spurs</span>
+                <span class="logo">🏀</span>
               </div>
             </div>
-            <div class="post-content">
-              <p>¡Hoy se disputará el partido más emocionante del año! 🏀</p><br>
-             <strong> <p>San Antonio(SPURS) vs Los Angeles(LAKERS)</p></strong>
-            </div>
-            
+            <p class="hora">Hace 2 horas</p>
           </div>
 
-          
-          
+          <div class="partido">
+            <div class="fecha">MAÑANA</div>
+            <div class="equipos">
+              <div class="equipo">
+                <span class="logo">🏀</span>
+                <span class="nombre">Celtics</span>
+              </div>
+              <div class="vs">vs</div>
+              <div class="equipo">
+                <span class="nombre">Heat</span>
+                <span class="logo">🏀</span>
+              </div>
+            </div>
+            <p class="hora">19:00 EST</p>
+          </div>
+
+          <div class="partido">
+            <div class="fecha">5 JUN</div>
+            <div class="equipos">
+              <div class="equipo">
+                <span class="logo">🏀</span>
+                <span class="nombre">Warriors</span>
+              </div>
+              <div class="vs">vs</div>
+              <div class="equipo">
+                <span class="nombre">Nuggets</span>
+                <span class="logo">🏀</span>
+              </div>
+            </div>
+            <p class="hora">20:30 EST</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="noticias">
+        <h3>⚽ Últimas Noticias de Fútbol</h3>
+        <div class="noticias-lista">
+          <div class="noticia">
+            <div class="encabezado-noticia">
+              <h4>Clásico Real Madrid vs Barcelona</h4>
+              <p class="tiempo">Hace 3 horas</p>
+            </div>
+            <p class="contenido-noticia">Madrid gana 2-1 en un emocionante partido. Benzema marca el gol de la victoria en los últimos minutos.</p>
+          </div>
+
+          <div class="noticia">
+            <div class="encabezado-noticia">
+              <h4>Manchester City vs Liverpool</h4>
+              <p class="tiempo">Ayer</p>
+            </div>
+            <p class="contenido-noticia">Empate 1-1 en Anfield. Ambos equipos dominan la Premier League con 45 puntos.</p>
+          </div>
+
+          <div class="noticia">
+            <div class="encabezado-noticia">
+              <h4>PSG elimina a Bayern en octavos</h4>
+              <p class="tiempo">Hace 2 días</p>
+            </div>
+            <p class="contenido-noticia">Goleada parisina de 4-1 asegura su pase a cuartos de final de la Champions League.</p>
+          </div>
         </div>
       </section>
     </main>
 
-    
     <aside class="notificaciones">
       <h3>🔔 Notificaciones</h3>
-      <div class="notificaciones-list" id="notificacionesList">
-        <div class="notificacion unread">
-          <span class="notif-icon">💬</span>
-          <p>NBA Empezo a transmitir en vivo</p>
-          <small>Hace 30 min</small>
-        </div>
-        <div class="notificacion unread">
-          <span class="notif-icon">👥</span>
-          <p>Han comenzado con la construcción del nuevo palacio deportivo</p>
-          <small>Hace 16 horas</small>
+      <div class="lista-notificaciones">
+        <div class="notificacion">
+          <span>💬</span>
+          <div>
+            <p>NBA transmitiendo en vivo</p>
+            <small>Hace 30 min</small>
+          </div>
         </div>
         <div class="notificacion">
-          <span class="notif-icon">📢</span>
-          <p>Las becas para ciberseguridad empiezan a recibir solicitudes</p>
-          <small>Hace 2 horas</small>
+          <span>👥</span>
+          <div>
+            <p>Nuevo palacio deportivo en construcción</p>
+            <small>Hace 16 horas</small>
+          </div>
         </div>
         <div class="notificacion">
-          <span class="notif-icon">🏆</span>
-          <p>Has recibido respuesta de una de tus solicitudes. Revisa ahora</p>
-          <small>Hace 3 días</small>
+          <span>📢</span>
+          <div>
+            <p>Becas de ciberseguridad disponibles</p>
+            <small>Hace 2 horas</small>
+          </div>
         </div>
       </div>
-      
-      <div class="eventos-proximos">
+
+      <div class="proximos-eventos">
         <h4>📅 Próximos Eventos</h4>
-        <div class="evento-item">
-          <div class="evento-date">5 Junio</div>
-          <div class="evento-info">
+        <div class="evento">
+          <div class="fecha-evento">5 JUN</div>
+          <div>
             <p>Torneo de Fútbol</p>
             <small>Campo de Deportes</small>
           </div>
-           <div class="evento-item">
-          <div class="evento-date">24 Julio</div>
-          <div class="evento-info">
-            <p>Competencia de Taekwondo</p>
+        </div>
+        <div class="evento">
+          <div class="fecha-evento">24 JUL</div>
+          <div>
+            <p>Taekwondo</p>
             <small>Sala de Entrenamiento</small>
           </div>
         </div>
-        <div class="evento-item">
-          <div class="evento-date">28 Septiembre</div>
-          <div class="evento-info">
-            <p>Torneo de Fútbol</p>
+        <div class="evento">
+          <div class="fecha-evento">28 SEP</div>
+          <div>
+            <p>Fútbol Final</p>
             <small>Campo de Deportes</small>
           </div>
-          
         </div>
       </div>
     </aside>
   </div>
 
   <script>
-    // Recuperar nombre del usuario desde registro
     document.addEventListener("DOMContentLoaded", () => {
       const usuario = localStorage.getItem("usuario");
       if (!usuario) {
         window.location.href = "login.html";
       } else {
-        document.getElementById("usuarioNombre").textContent = `¡Bienvenido, ${usuario}!`;
+        document.getElementById("nombreUsuario").textContent = `¡Bienvenido, ${usuario}!`;
       }
 
-      
-
-      // Botón cerrar sesión
-      document.getElementById("btnCerrar").addEventListener("click", () => {
+      document.querySelector(".boton-cerrar").addEventListener("click", () => {
         if (confirm("¿Deseas cerrar sesión?")) {
           localStorage.removeItem("usuario");
           localStorage.removeItem("password");
@@ -154,11 +197,10 @@
         }
       });
 
-      // Navegación activa en sidebar
-      document.querySelectorAll(".nav-item").forEach(item => {
-        item.addEventListener("click", function() {
-          document.querySelectorAll(".nav-item").forEach(i => i.classList.remove("active"));
-          this.classList.add("active");
+      document.querySelectorAll(".enlace").forEach(enlace => {
+        enlace.addEventListener("click", function() {
+          document.querySelectorAll(".enlace").forEach(e => e.classList.remove("activo"));
+          this.classList.add("activo");
         });
       });
     });
