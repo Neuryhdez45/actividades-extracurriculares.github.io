@@ -101,40 +101,7 @@ body {
   gap: 25px;
 }
 
-.perfil {
-  background: white;
-  border-radius: var(--radio);
-  box-shadow: var(--sombra);
-  padding: 30px;
-}
 
-.info-perfil h2 {
-  font-size: 1.8rem;
-  color: var(--primario);
-  margin-bottom: 10px;
-}
-
-.info-perfil p {
-  color: var(--texto-claro);
-  margin-bottom: 15px;
-}
-
-.estadisticas {
-  display: flex;
-  gap: 30px;
-  margin-top: 15px;
-}
-
-.estadistica {
-  text-align: center;
-}
-
-.numero {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--primario);
-}
 
 .etiqueta {
   display: block;
