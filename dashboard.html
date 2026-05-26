@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="dashboard-container">
-    <!-- SIDEBAR -->
+    
     <aside class="sidebar">
       <div class="sidebar-header">
         <h2>🎯 Menú</h2>
@@ -18,29 +18,21 @@
         <a href="#inicio" class="nav-item active">
           <span class="icon">🏠</span> Inicio
         </a>
-        <a href="#perfil" class="nav-item">
-          <span class="icon">👤</span> Mi Perfil
-        </a>
         <a href="formulario.html" class="nav-item">
           <span class="icon">📝</span> Inscribirse
         </a>
-        <a href="#galeria" class="nav-item">
-          <span class="icon">🎨</span> Galería
-        </a>
-        <a href="#config" class="nav-item">
-          <span class="icon">⚙️</span> Configuración
+       
         </a>
       </nav>
     </aside>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    
     <main class="main-content">
-      <!-- PERFIL -->
+      
       <section class="perfil-section" id="perfil">
         <div class="perfil-header">
-          <div class="perfil-avatar">
-            <img src="img/perfil.png" alt="Avatar del usuario">
-          </div>
+          
+           
           <div class="perfil-info">
             <h2 id="usuarioNombre">Bienvenido</h2>
             <p class="perfil-bio">Estudiante apasionado por la tecnología y las actividades extracurriculares.</p>
@@ -60,113 +52,56 @@
             </div>
           </div>
         </div>
-      </section>
+ 
 
-      <!-- CAJA DE PUBLICACIÓN -->
-      <section class="publicar-section">
-        <div class="publicar-box">
-          <textarea id="textoPublicacion" placeholder="¿Qué estás pensando? Comparte tu experiencia..."></textarea>
-          <div class="publicar-actions">
-            <div class="publicar-options">
-              <button class="option-btn" title="Agregar emoji">😊</button>
-              <button class="option-btn" title="Agregar imagen">🖼️</button>
-              <button class="option-btn" title="Agregar etiqueta">#️⃣</button>
-            </div>
-            <button class="btn-publicar" id="btnPublicar">Publicar</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- FEED DE PUBLICACIONES -->
-      <section class="feed-section">
-        <h3>📰 Feed de Actividad</h3>
+       
+      <section class="noticias">
+        <h3>📰 Noticias de Deportes</h3>
         <div class="feed" id="feed">
           <div class="post">
             <div class="post-header">
-              <div class="post-avatar">
-                <img src="img/perfil.png" alt="Avatar">
-              </div>
+              
               <div class="post-meta">
-                <h4>María García</h4>
+                <h4>NBA Lives</h4>
                 <p class="post-time">Hace 2 horas</p>
               </div>
             </div>
             <div class="post-content">
-              <p>¡Hoy participé en el concurso de arte y fue increíble! Conocí a personas muy talentosas y aprendí técnicas nuevas. ¡Gracias a esta plataforma! 🎨</p>
+              <p>¡Hoy se disputará el partido más emocionante del año! 🏀</p><br>
+             <strong> <p>San Antonio(SPURS) vs Los Angeles(LAKERS)</p></strong>
             </div>
-            <div class="post-actions">
-              <button class="action-btn">👍 Me gusta (5)</button>
-              <button class="action-btn">💬 Comentar</button>
-              <button class="action-btn">⭐ Guardar</button>
-            </div>
+            
           </div>
 
-          <div class="post">
-            <div class="post-header">
-              <div class="post-avatar">
-                <img src="img/perfil.png" alt="Avatar">
-              </div>
-              <div class="post-meta">
-                <h4>Carlos López</h4>
-                <p class="post-time">Hace 4 horas</p>
-              </div>
-            </div>
-            <div class="post-content">
-              <p>Nos vemos en el hackathon este fin de semana 🚀. Busco equipo para trabajar en un proyecto de ciberseguridad. ¿Alguien interesado?</p>
-            </div>
-            <div class="post-actions">
-              <button class="action-btn">👍 Me gusta (12)</button>
-              <button class="action-btn">💬 Comentar (3)</button>
-              <button class="action-btn">⭐ Guardar</button>
-            </div>
-          </div>
-
-          <div class="post">
-            <div class="post-header">
-              <div class="post-avatar">
-                <img src="img/perfil.png" alt="Avatar">
-              </div>
-              <div class="post-meta">
-                <h4>Juan Pérez</h4>
-                <p class="post-time">Hace 6 horas</p>
-              </div>
-            </div>
-            <div class="post-content">
-              <p>Felicidades a todos los que ganaron el torneo de ajedrez. ¡Qué nivel de juego! Espero poder participar en la próxima edición. ♟️</p>
-            </div>
-            <div class="post-actions">
-              <button class="action-btn">👍 Me gusta (8)</button>
-              <button class="action-btn">💬 Comentar</button>
-              <button class="action-btn">⭐ Guardar</button>
-            </div>
-          </div>
+          
+          
         </div>
       </section>
     </main>
 
-    <!-- PANEL DE NOTIFICACIONES -->
+    
     <aside class="notificaciones">
       <h3>🔔 Notificaciones</h3>
       <div class="notificaciones-list" id="notificacionesList">
         <div class="notificacion unread">
           <span class="notif-icon">💬</span>
-          <p>Juan comentó tu publicación</p>
+          <p>NBA Empezo a transmitir en vivo</p>
           <small>Hace 30 min</small>
         </div>
         <div class="notificacion unread">
           <span class="notif-icon">👥</span>
-          <p>Tienes una nueva solicitud de amistad</p>
-          <small>Hace 1 hora</small>
+          <p>Han comenzado con la construcción del nuevo palacio deportivo</p>
+          <small>Hace 16 horas</small>
         </div>
         <div class="notificacion">
           <span class="notif-icon">📢</span>
-          <p>Hackathon inicia mañana</p>
+          <p>Las becas para ciberseguridad empiezan a recibir solicitudes</p>
           <small>Hace 2 horas</small>
         </div>
         <div class="notificacion">
           <span class="notif-icon">🏆</span>
-          <p>Ganaste un badge: Participante Activo</p>
-          <small>Hace 1 día</small>
+          <p>Has recibido respuesta de una de tus solicitudes. Revisa ahora</p>
+          <small>Hace 3 días</small>
         </div>
       </div>
       
