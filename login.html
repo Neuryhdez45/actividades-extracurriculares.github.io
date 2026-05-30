@@ -331,14 +331,14 @@
       const passwordGuardado = localStorage.getItem("password");
       const mensajeDiv = document.getElementById("mensaje");
 
-      // Validación básica
+     
       if (!usuarioIngresado || !passwordIngresado) {
         mensajeDiv.textContent = "⚠️ Por favor completa todos los campos";
         mensajeDiv.className = "error";
         return;
       }
 
-      // Verificación de credenciales
+     
       if (usuarioIngresado === usuarioGuardado && passwordIngresado === passwordGuardado) {
         // Mostrar mensaje de éxito
         mensajeDiv.textContent = "✅ ¡Inicio de sesión exitoso! Redirigiendo...";
@@ -353,13 +353,13 @@
         mensajeDiv.textContent = "❌ Usuario o contraseña incorrectos";
         mensajeDiv.className = "error";
         
-        // Limpiar campo de contraseña por seguridad
+     
         document.getElementById("password").value = "";
         document.getElementById("password").focus();
       }
     });
 
-    // Cargar usuario guardado si existe
+    
     window.addEventListener("DOMContentLoaded", () => {
     
       const usuarioGuardado = localStorage.getItem("usuarioGuardado");
